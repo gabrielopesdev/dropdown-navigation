@@ -33,27 +33,28 @@ a {
     display: flex;
     align-items: center;
     margin: 20px;
-    margin-right: 8rem;   
+    float: left;   
 }
 
-.top-bar .menu-bar {
+.top-bar .menu-bar-desktop {
     display: flex;
     align-items: center;
     font-size: 20px;
 }
 
-.top-bar .menu-bar ul {
+.top-bar .menu-bar-desktop ul {
     position: absolute;
     display: flex;
     list-style: none;
-    gap: 10px;
+    margin-left: 5rem;
+    gap: 5rem;
 }
 
-.top-bar .menu-bar ul ul {
+.top-bar .menu-bar-desktop ul ul {
     display: none;
 }
 
-.menu-bar li:hover > ul {
+.menu-bar-desktop li:hover > ul {
     display: block;
     flex-direction: column;
     padding: 10px;
@@ -64,9 +65,12 @@ a {
     min-width: 150px;
   }
 
-.top-bar .menu-bar li {
+.top-bar .menu-bar-desktop li {
     padding: 10px;
-    margin-right: 3em;
+}
+
+.top-bar .login-register {
+    float: right;
 }
 
 .top-bar .login-register button {
@@ -82,7 +86,6 @@ a {
 .top-bar .register-button {
     border-radius: 15px;
 }
-
 
 /* content */
 
@@ -100,8 +103,12 @@ a {
     gap: 5rem;
 }
 
-.container .figures img {
+.container .figures .desktop-figure {
     max-width: 700px;
+}
+
+.container .figures .mobile-figure {
+    display: none;
 }
 
 .container .content h1 {
@@ -137,7 +144,7 @@ a {
 .content .brands-soon {
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 8rem;
 
 }
 
@@ -152,4 +159,3 @@ a {
     display: flex;
     justify-content: space-between;
 }
-
